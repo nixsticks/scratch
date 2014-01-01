@@ -5,7 +5,7 @@ class Backend
   KEEPALIVE_TIME = 15
 
   MUTEX = Mutex.new
-  CLAP = "ClapForAshley"
+  CLAP = "#ClapForAshley"
 
   def initialize(app)
 
