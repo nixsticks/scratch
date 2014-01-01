@@ -22,7 +22,7 @@ ws.onmessage = function(message) {
   };
 
   function hide() {
-    $("#message").replaceWith(message_div + "<h2>" + "Sit patiently, and wait for Ashley to tweet" + "</h2>" + div_close);
+    $("#message").replaceWith(message_div + "<h2>" + "Wait for it..." + "</h2>" + div_close);
     $("#clap").replaceWith(clap_div + div_close);
   };
 
