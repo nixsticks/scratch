@@ -5,7 +5,6 @@ class Backend
   KEEPALIVE_TIME = 15
 
   MUTEX = Mutex.new
-  CLAP = "#ClapForAshley"
 
   def initialize(app)
 
@@ -34,7 +33,7 @@ class Backend
         MUTEX.synchronize {
           @clients.each {|client| client.send(JSON.dump status)}
         }
-      end.track("#{CLAP}", "#{CLAP.downcase}", "#{CLAP.upcase}") do |status|
+      end.track("clapforashley") do |status|
         puts "I GOT A STATUS"
         status = "#{status.text} - @#{status.user.screen_name}"
         MUTEX.synchronize {
