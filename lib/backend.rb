@@ -23,7 +23,7 @@ class Backend
       client1 = TweetStream::Client.new
       client2 = TweetStream::Client.new
 
-      client1.track('clapforashley') do |status|
+      client1.track('clapforashley', 'ag_dubs', '@ag_dubs') do |status|
         get_status(status)
       end
 
