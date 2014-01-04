@@ -31,7 +31,7 @@ class Backend
       end
 
       client.on_enhance_your_calm do
-        puts "shit i hit the fucking rate limit"
+        get_status("shit i hit the fucking rate limit - @nikki")
       end
     end
   end
